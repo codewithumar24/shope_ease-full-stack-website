@@ -62,23 +62,25 @@
                 <div class="relative border-b-2 border-gray-200 focus-within:border-green-400 transition-colors">
                     <span class="absolute left-0 bottom-2 text-gray-400"><i class="fas fa-user"></i></span>
                     <input type="eamil" name="email" placeholder="Username" class="w-full pl-8 pb-2 outline-none bg-transparent" required>
-                       @error('email')
+                      
+                </div>
+                 @error('email')
                     <span class="bg-success-400 text-red-600">{{$message}}</span>
                         
                     @enderror
-                </div>
 
                 <div class="relative border-b-2 border-gray-200 focus-within:border-green-400 transition-colors flex items-center">
                     <span class="absolute left-0 bottom-2 text-gray-400"><i class="fas fa-lock"></i></span>
                     <input type="password" name="password" placeholder="••••••••" class="w-full pl-8 pb-2 outline-none bg-transparent" required>
-                       @error('password')
-                    <span class="bg-success-400 text-red-600">{{$message}}</span>
-                        
-                    @enderror
+                     
                     <button type="submit" class="bg-green-400 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-green-500 transition-all shadow-md">
                         <i class="fas fa-arrow-right"></i>
                     </button>
                 </div>
+                  @error('password')
+                    <span class="bg-success-400 text-red-600">{{$message}}</span>
+                        
+                    @enderror
 
                 <div class="text-right">
                     <a href="/forgot" class="text-sm text-gray-400 hover:text-gray-600">Forgot?</a>
