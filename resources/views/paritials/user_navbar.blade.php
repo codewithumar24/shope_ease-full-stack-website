@@ -47,7 +47,7 @@
                                 <i class="fa-solid fa-cog mr-2"></i> Settings
                             </a>
                             <div class="border-t border-gray-100"></div>
-                            <a href="#" class="block px-4 py-2 text-sm text-red-600 hover:bg-red-50 transition-colors">
+                            <a href="{{route('logout')}}" class="block px-4 py-2 text-sm text-red-600 hover:bg-red-50 transition-colors">
                                 <i class="fa-solid fa-sign-out-alt mr-2"></i> Logout
                             </a>
                         </div>

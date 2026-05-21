@@ -11,7 +11,7 @@
 
             <nav class="mt-6 px-4 space-y-2 overflow-y-auto h-[calc(100vh-5rem)] pb-20">
                 
-                <a href="#" class="flex items-center space-x-3 px-4 py-3 rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
+                <a href="{{route('dashboard')}}" class="flex items-center space-x-3 px-4 py-3 rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
                     <i class="fa-solid fa-chart-line text-lg"></i>
                     <span class="font-medium">Dashboard</span>
                 </a>
@@ -33,7 +33,7 @@
                     <span class="font-medium">Customers</span>
                 </a>
 
-                <a href="#" class="flex items-center space-x-3 px-4 py-3 rounded-xl text-gray-600 hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:text-blue-600 transition-all duration-300 group">
+                <a href="{{route('category.home')}}" class="flex items-center space-x-3 px-4 py-3 rounded-xl text-gray-600 hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:text-blue-600 transition-all duration-300 group">
                     <i class="fa-solid fa-tags text-lg group-hover:scale-110 transition-transform"></i>
                     <span class="font-medium">Categories</span>
                 </a>

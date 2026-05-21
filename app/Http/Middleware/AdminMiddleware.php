@@ -21,11 +21,10 @@ class AdminMiddleware
         return redirect()->route('login');
     }
 
-    if(Auth::check() && AUth::user()->role != 'admin'){
-        return redirect()->route('user-dashboard');
-    }else{
+
+    if(Auth::user()->role != 'admin'){
         return redirect()->route('user-dashboard');
     }
-       return $next($request);
-    } 
+        return $next($request);
+    }
 }
